@@ -26,6 +26,7 @@ Example:
 ```
     #Good
     name = "paul"
+    first_name = "paul"
 
     #Bad
     Name = "paul"
