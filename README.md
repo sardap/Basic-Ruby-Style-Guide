@@ -20,11 +20,18 @@ Example:
 
 # Variables
 ## Names
-Must be in the underscore_lowercase format.
+Must be in the snake_case format.
 
 Example:
 ```
+    #Good
     name = "paul"
+
+    #Bad
+    Name = "paul"
+    FamilyName = "Sarda"
+    Family_Name = "Sarda"
+
 ```
 
 
@@ -38,8 +45,8 @@ Example:
 
     # Bad
     paul_is_not_cool =false
-    paul_is_not_cool=false 
-    paul_is_not_cool= false 
+    paul_is_not_cool=false
+    paul_is_not_cool= false
 
     # Good
     ten = 5 + 5
@@ -50,11 +57,23 @@ Example:
 
 # functions
 ## Names
-Function names should use underscore_lowercase.
+Function names should use snake_case.
 
 Examples:
 ```
+    # Good
     def return_paul
+        return "paul"
+    end
+
+    # Bad - PascalCase
+
+    def ReturnPaul
+        return "paul"
+    end
+
+    # Also Bad - camelCase
+    def ReturnPaul
         return "paul"
     end
 ```
@@ -89,8 +108,8 @@ No spaces between ) and the last argument.
 Examples:
 ```
     # Good
-    puts("paul is so cool") 
-    
+    puts("paul is so cool")
+
     # Bad
     puts( "paul is not cool" )
 ```
@@ -98,14 +117,14 @@ Examples:
 ### Definitions
 Add parentheses if there is one or more arguments.
 
-Example: 
+Example:
 ```
     def sum (a, b) # needed
         return a + b
     end
-    
+
     def return_paul # no brackets needed
-        return "paul" 
+        return "paul"
     end
 ```
 
@@ -132,7 +151,7 @@ Example:
 ```
 
 # If
-Don't use Parentheses or use them not both. 
+Don't use Parentheses or use them not both.
 
 Example:
 ```
@@ -254,9 +273,9 @@ Examples:
         puts("REALLY?")
     end
 
-    def main 
+    def main
         name = "paul"
-        
+
         if name === "paul"
             its_paul
         end
@@ -267,9 +286,9 @@ Examples:
     puts("REALLY?")
     end
 
-        def main 
+        def main
     name = "paul"
-        
+
     if name ===             "paul"
                         its_paul
                 end
@@ -281,9 +300,9 @@ Examples:
     puts("REALLY?")
     end
 
-    def main 
+    def main
     name = "paul"
-    
+
     if name === "paul"
     its_paul
     end
@@ -295,9 +314,9 @@ Examples:
             puts("REALLY?")
     end
 
-    def main 
+    def main
         name = "paul"
-        
+
         if name === "paul"
                 its_paul
         end
