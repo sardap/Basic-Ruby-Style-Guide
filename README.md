@@ -264,6 +264,15 @@ Example:
     end
 ```
 
+Array Example:
+```
+    dice_rolls = [1, 3, 3, 1];
+    
+    for roll in dice_rolls do
+        puts("#{roll}");
+    end
+```
+
 # Indentation
 Everything between the end and what the end is ending must be indented
 
@@ -324,4 +333,33 @@ Examples:
     end
 
 
+```
+
+# Structures / Records / Classes
+## Name
+Must be in PascalCase meaning that every word should be capitalised and no spaces.
+
+Members must be in snake_case
+
+Example:
+```
+    class Person
+        attr_accessor :name, :birth_year
+    end
+
+    class EvilTeacher 
+        attr_accessor :subject, :year_started
+    end
+```
+
+# Array
+All normal naming rules apply
+
+Example:
+```
+    numbers = [];
+    
+    numbers << 10;
+
+    puts(numbers[0]);
 ```
