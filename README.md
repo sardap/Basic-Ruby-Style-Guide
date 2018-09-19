@@ -1,19 +1,18 @@
 # Basic-Ruby-Style-Guide
 
 # Semi colons ;
-Don't use them or always use them.
+Avoid them unless writing multiple statements per line
 
 Example:
 ```
     # Good
-    name = gets.chomp
-    puts("hi #{name}")
+    def needs_cursor?; true; end
 
-    # Also good
+    # Bad
     name = gets.chomp;
     puts("hi #{name}");
 
-    # Bad uses sometimes but not always or never
+    # Even worse - uses inconsistently
     name = gets.chomp
     puts("hi #{name}");
 ```
@@ -267,7 +266,7 @@ Example:
 Array Example:
 ```
     dice_rolls = [1, 3, 3, 1];
-    
+
     for roll in dice_rolls do
         puts("#{roll}");
     end
@@ -347,7 +346,7 @@ Example:
         attr_accessor :name, :birth_year
     end
 
-    class EvilTeacher 
+    class EvilTeacher
         attr_accessor :subject, :year_started
     end
 ```
@@ -358,7 +357,7 @@ All normal naming rules apply
 Example:
 ```
     numbers = [];
-    
+
     numbers << 10;
 
     puts(numbers[0]);
